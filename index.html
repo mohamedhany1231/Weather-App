@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <form action="">
+      <div class="input-div">
+        <!-- <label for="location"> lobation</label> -->
+        <input
+          type="text"
+          id="location"
+          placeholder="insert your location .. "
+        />
+      </div>
+      <button type="button">search</button>
+    </form>
+    <img src="./loading.gif" alt="" class="loading" />
+    <div class="data">
+      <h2 class="temp"></h2>
+      <h3 class="location"></h3>
+      <p class="humidity"></p>
+      <div class="condition">
+        <img src="loading.gif" alt="weather condition" />
+        <p></p>
+      </div>
+    </div>
+  </body>
+</html>

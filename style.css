@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-image: url("weather-bg.jpg");
+  padding: 10vh 20%;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  gap: 10%;
+  align-items: center;
+}
+.input-div {
+  flex: 1;
+}
+input {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 5%/50%;
+  padding: 1vh 5%;
+  font-size: 1.4em;
+  color: cornflowerblue;
+}
+input:focus {
+  border: 2px solid cornflowerblue;
+  outline: none;
+}
+input:-internal-autofill-selected {
+  color: cornflowerblue !important;
+}
+form button {
+  background-color: cornflowerblue;
+  color: white;
+  padding: 1vw;
+  border-radius: 12%;
+  outline: none;
+  font-size: 2em;
+  font-weight: bold;
+}
+form button:hover {
+  background-color: white;
+  color: cornflowerblue;
+}
+
+.data {
+  margin-top: 5vh;
+  color: white;
+  font-size: larger;
+}
+.data .temp {
+  font-size: 20vh;
+  margin-bottom: 10px;
+}
+.data .location {
+  margin-bottom: 10px;
+}
+
+.data .condition {
+  display: flex;
+  align-items: center;
+}
+.data .condition img {
+  height: 15vh;
+}
+
+.data .condition p {
+  font-size: 1.4em;
+}
+
+.loading {
+  position: fixed;
+  top: 22%;
+  height: 50vh;
+}
