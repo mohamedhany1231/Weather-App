@@ -17,8 +17,8 @@ async function getWeather(location) {
     let data = await getWeatherInfo(location);
     let processedData = processData(data);
     renderData(processedData);
-  } catch {
-    alert("something Went Wrong");
+  } catch (err) {
+    console.log("something Went Wrong" + err);
     getWeather("london");
   } finally {
     finishLoading();
